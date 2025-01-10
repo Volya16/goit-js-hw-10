@@ -22,11 +22,7 @@ body {
   z-index: 1000;
 }
 
-.page-title {
-  font-size: 1.8em;
-  color: #E4E4F4;
-  margin: 0 0 10px 0;
-}
+
 
 .list-nav {
   list-style-type: none;

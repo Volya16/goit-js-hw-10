@@ -10,7 +10,6 @@
 </head>
 <body>
     <header class="header">
-    <h1 class="page-title">Timer</h1>
     <nav>
       <ul class="list-nav">
         <li class="list-nav-item"><a href="./index.html">Home</a></li>
@@ -19,12 +18,13 @@
       </ul>
     </nav>
   </header>
-  <div class="container">
+<main>
+<section class="timer-section">
+  <h1 class="page-title">Timer</h1>
     <div class="mini-container">
-      <input type="text" id="datetime-picker" />
-<button type="button" data-start>Start</button>
+      <input class="timer-input" type="text" id="datetime-picker" />
+<button class="timer-btn" type="button" data-start>Start</button>
     </div>
-
 <div class="timer">
   <div class="field">
     <span class="value" data-days>00</span>
@@ -43,7 +43,7 @@
     <span class="label">Seconds</span>
   </div>
 </div>
-
-  </div>
+</section>
+</main>
 </body>
 </html>
