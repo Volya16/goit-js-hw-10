@@ -21,7 +21,8 @@ locale: {
           startBtnEl.disabled = false;
           userSelectedDate = selectedDates[0].getTime(); 
           console.log(userSelectedDate);
-     }
+      }
+      
   },
 };
 
@@ -35,7 +36,13 @@ const hoursEl = document.querySelector('[data-hours]');
 const minEl = document.querySelector('[data-minutes]');
 const secEl = document.querySelector('[data-seconds]');
 
-// console.dir(inputEl);
+startBtnEl.addEventListener('click', onStartBtn)
 
-// let data = inputEl.value;
-// console.log(data);
+function onStartBtn() {
+  const intervalId = setInterval(() => {
+    const diff = userSelectedDate - Date.now(); 
+    if (diff >= 0) {
+      
+    }
+  }, 1000)
+}
