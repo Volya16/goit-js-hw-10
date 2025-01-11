@@ -51,7 +51,7 @@ body {
   max-width: 1200px;
   width: 90%;
   padding: 20px;
-  margin-top: 120px; /* Відступ зверху, щоб компенсувати фіксовану навігацію */
+  margin-top: 120px; 
   background-color: #FFF;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
