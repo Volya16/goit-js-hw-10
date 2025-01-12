@@ -33,7 +33,7 @@ locale: {
         message: 'Please choose a date in the future',
         position: 'topRight',
         transitionIn: 'bounceInLeft',
-        timeout: 6000,
+        timeout: 4000,
         closeOnClick: true,
       });
       } else {
@@ -52,7 +52,7 @@ function onStartBtn() {
 
   const intervalId = setInterval(() => {
     ms = userSelectedDate - Date.now(); 
-    
+
     if (ms >= 0) {
       const timeLeft = convertMs(ms);
       updateTimer(timeLeft);
