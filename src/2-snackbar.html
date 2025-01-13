@@ -20,16 +20,25 @@
     </nav>
   </header>
   <div class="container">
-    <form class="feedback-form" autocomplete="off">
-  <label>
-    Email
-    <input type="email" name="email" autofocus />
+    <form class="form">
+  <label class="delay-label">
+    Delay (ms)
+    <input class="delay-input" type="number" name="delay" required />
   </label>
-  <label>
-    Message
-    <textarea name="message" rows="8"></textarea>
-  </label>
-  <button type="submit">Submit</button>
+
+  <fieldset class="form-fieldset">
+    <legend>State</legend>
+    <label class="label-form">
+      <input type="radio" name="state" value="fulfilled" required />
+      Fulfilled
+    </label>
+    <label class="label-form">
+      <input type="radio" name="state" value="rejected" required />
+      Rejected
+    </label>
+  </fieldset>
+
+  <button class="btn-submit" type="submit">Create notification</button>
 </form>
   </div>
 </body>
