@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form</title>
-  <script type="module" crossorigin src="/goit-js-hw-10/assets/nav-Dj_5-SSV.js"></script>
+  <script type="module" crossorigin src="/goit-js-hw-10/2-snackbar.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/nav-Dj_5-SSV.js">
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BbbuE1sJ.js">
   <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/nav-DqfKSOgw.css">
-  <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/2-snackbar-Bgap29qu.css">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CZjNVMTf.css">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/2-snackbar-BxN3yeuJ.css">
 </head>
 <body>
   <header class="header">
-    <h1 class="page-title">Form</h1>
     <nav>
        <ul class="list-nav">
         <li class="list-nav-item"><a href="./index.html">Home</a></li>
@@ -19,7 +21,8 @@
       </ul>
     </nav>
   </header>
-  <div class="container">
+  <section class="snackbar-section">
+    <h1 class="page-title">Snackbar</h1>
     <form class="form">
   <label class="delay-label">
     Delay (ms)
@@ -28,18 +31,18 @@
 
   <fieldset class="form-fieldset">
     <legend>State</legend>
-    <label class="label-form">
-      <input type="radio" name="state" value="fulfilled" required />
+    <label class="radio-label">
+      <input class="radio-input" type="radio" name="state" value="fulfilled" required />
       Fulfilled
     </label>
-    <label class="label-form">
-      <input type="radio" name="state" value="rejected" required />
+    <label class="radio-label">
+      <input class="radio-input" type="radio" name="state" value="rejected" required />
       Rejected
     </label>
   </fieldset>
 
   <button class="btn-submit" type="submit">Create notification</button>
 </form>
-  </div>
+  </section>
 </body>
 </html>
